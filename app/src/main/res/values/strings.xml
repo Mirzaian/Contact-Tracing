@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Contact-Tracking</string>
+    <string name="personInfo">%1$s %2$s</string>
 </resources>
