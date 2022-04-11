@@ -43,6 +43,7 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
 
             android:orientation="horizontal">
 
@@ -66,14 +67,17 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
 
-                android:text="%1$s %2$s"
+                android:text="@string/personInfo"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
 
             android:orientation="horizontal">
 
@@ -97,14 +101,17 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
 
-                android:text="%1$s %2$s"
+                android:text="@string/personInfo"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
 
             android:orientation="horizontal">
 
@@ -128,14 +135,17 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
 
-                android:text="%1$s %2$s"
+                android:text="@string/personInfo"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
 
             android:orientation="horizontal">
 
@@ -159,14 +169,17 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
 
-                android:text="%1$s %2$s"
+                android:text="@string/personInfo"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+
+                android:visibility="gone"/>
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
 
             android:orientation="horizontal">
 
@@ -190,12 +203,31 @@
                 android:layout_width="120dp"
                 android:layout_height="60dp"
 
-                android:text="%1$s %2$s"
+                android:text="@string/personInfo"
                 android:textAlignment="center"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+
+                android:visibility="gone"/>
         </LinearLayout>
 
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnConvert"
+
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+
+        android:text="Export Contact-list"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+
+        android:enabled="false"
+
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
