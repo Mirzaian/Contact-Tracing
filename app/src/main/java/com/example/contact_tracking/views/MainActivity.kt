@@ -38,6 +38,7 @@ class MainActivity() : AppCompatActivity(){
     private val personInfo = mutableListOf<ItemPerson>()
     private var personAmount = 0
 
+    // permissions to read and write external
     private val requiredPermissions = arrayOf(
         "android.permission.READ_EXTERNAL_STORAGE",
         "android.permission.WRITE_EXTERNAL_STORAGE"
@@ -53,11 +54,7 @@ class MainActivity() : AppCompatActivity(){
 
     private fun allPermissionsGranted(): Boolean {
         for (permission in requiredPermissions) {
-            if (ContextCompat.checkSelfPermission(
-                    this,
-                    permission
-                ) != PackageManager.PERMISSION_GRANTED
-            ) {
+            if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
                 return false
             }
         }
@@ -130,6 +127,7 @@ class MainActivity() : AppCompatActivity(){
         }
     }
 
+    // listener for btnOpenDialog to show the message box
     private fun openDialog() {
         for (i in btnOpenDialog.indices) {
             btnOpenDialog[i].setOnClickListener {
@@ -141,9 +139,11 @@ class MainActivity() : AppCompatActivity(){
     private fun exportData() {
 
         gui.btnConvert.setOnClickListener {
+            // variables for csv filename and personInfo categories
             val header = "Firstname, Lastname"
             val filename = "contact_tracking.csv"
 
+            // fun to check sdk version for directory
             val dir = if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
                 File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOCUMENTS).toString() + "/" + "blub")
             } else {
@@ -151,19 +151,22 @@ class MainActivity() : AppCompatActivity(){
             }
             dir.mkdirs()
 
-            // create fileOut Object
+            // variables create fileOut Object
             val fileOut = File(dir, filename)
-
             val fileOutStream = FileOutputStream(fileOut)
 
+            // variable for content -> first header then next line
             var content = header+"\n"
 
+            // add firstname and lastname to content -> logger check
             for(item in personInfo) {
                 logger.info("${item.firstname}, ${item.lastname}")
                 content += "${item.firstname}, ${item.lastname}\n"
             }
-
+            // logger output content
             logger.info(content)
+
+            // write content into csv
             try {
                 fileOutStream.write(content.toByteArray())
             } catch (e: Exception) {
@@ -171,7 +174,6 @@ class MainActivity() : AppCompatActivity(){
             } finally {
                 fileOutStream.close()
             }
-
             logger.info("contact_tracking.csv created")
 
         }
