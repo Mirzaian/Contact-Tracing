@@ -241,16 +241,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="BottomAppBar">
-
-        <com.google.android.material.textview.MaterialTextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:text="© Kevin Mirzaian"
-            android:textAlignment="center"
-            android:textSize="18dp"
-            android:textColor="@color/white"/>
-
     </com.google.android.material.bottomappbar.BottomAppBar>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
