@@ -89,11 +89,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    $ android-studio
    ```
-3. In the next step, we clone the repo
+2. In the next step, we clone the repo
    ```sh
    git clone https://github.com/RazamTV/Contact-Tracking.git
    ```
-4. Now you have the project on your computer. In Android studio you have on the top the option `File`, click that. Now choose `Open` and select the folder of the application 
+3. Now you have the project on your computer. In Android studio you have on the top the option `File`, click that. Now choose `Open` and select the folder of the application 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
