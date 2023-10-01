@@ -22,14 +22,6 @@
 </details>
 
 ## About
-
-<div align="left">
-    <img src="https://user-images.githubusercontent.com/77831173/162792976-0f3c2b98-7db3-4b48-8380-a48505c3495e.png" alt="example1" width="250px" height="500px">
-    <img src="https://user-images.githubusercontent.com/77831173/162793172-2f9ae0fe-4a72-4a8d-801a-6d40828d9500.png" alt="example2" width="250px" height="500px">
-    <img src="https://user-images.githubusercontent.com/77831173/162739037-5332901a-61e0-4108-876b-bb4a1edc12e7.png" alt="example3" width="250px" height="500px">
-  
-  </a>
-</div>
 This project is about a 'Contact-Tracing' application for private or commerical use.
 
 
