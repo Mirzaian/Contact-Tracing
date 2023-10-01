@@ -85,7 +85,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 ## Usage
 
-The project can be used in all areas that require contact tracking. You can easily capture the contact data of a person and export it to a csv file and can access it at any time. Please observe the privacy rules in your country.
+The project can be used in all areas that require contact tracing. You can easily capture the contact data of a person and export it to a csv file and can access it at any time. Please observe the privacy rules in your country.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -99,7 +99,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 Don't forget to give the project a star! Thanks again!
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/Contact-Tracking`)
+2. Create your Feature Branch (`git checkout -b feature/Contact-Tracing`)
 3. Commit your Changes (`git commit -m 'Add some features'`)
 4. Push to the Branch (`git push origin develop`)
 5. Open a Pull Request
