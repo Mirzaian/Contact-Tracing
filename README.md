@@ -1,10 +1,3 @@
-<div id="top"></div>
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="https://user-images.githubusercontent.com/77831173/162794693-627e3869-178a-41ae-992e-33029739fa97.png" alt="Logo">
-  </a>
-</div>
-
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -37,7 +30,7 @@
   
   </a>
 </div>
-This project is about a 'Contact-Tracking' application for private or commerical use.
+This project is about a 'Contact-Tracing' application for private or commerical use.
 
 
 Here's why:
